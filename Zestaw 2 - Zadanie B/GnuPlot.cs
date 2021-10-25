@@ -1,9 +1,9 @@
 using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
-using System.Linq;
 
 namespace AwokeKnowing.GnuplotCSharp
 {
@@ -20,6 +20,7 @@ namespace AwokeKnowing.GnuplotCSharp
 
         static GnuPlot()
         {
+            CultureInfo.CurrentCulture = new CultureInfo("en-US", false);
             if (PathToGnuplot[PathToGnuplot.Length - 1].ToString() != @"\")
                 PathToGnuplot += @"\";
             ExtPro = new Process();

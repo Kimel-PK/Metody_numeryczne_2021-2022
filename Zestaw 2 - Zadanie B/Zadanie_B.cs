@@ -1,30 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using AwokeKnowing.GnuplotCSharp;
 
 namespace Zadanie_B {
 	class Program {
 		static void Main(string[] args) {
 			
-			double[] wynikiFloat = new double[2048];
-			double[] wynikiDouble = new double[2048];
+			double[] wynikiFloat = new double[2049];
+			double[] wynikiDouble = new double[2049];
 			
-			for (int i = 0; i < 2048; i++) {
+			for (int i = 1; i <= 2048; i++) {
 				wynikiFloat[i] = Iteruj_float(i);
 				wynikiDouble[i] = Iteruj_double(i);
 			}
 			
-			GnuPlot.HoldOn();
+			GnuPlot.Set ("xrange [1:2048]");
+			GnuPlot.Set ("multiplot layout 1,2");
+			GnuPlot.Set ("title \"Float\"");
 			GnuPlot.Plot(wynikiFloat);
+			GnuPlot.Set ("title \"Double\"");
 			GnuPlot.Plot(wynikiDouble);
-			GnuPlot.HoldOff();
-			
-			foreach (double liczba in wynikiDouble) {
-				Console.Write (liczba + ", ");
-			}
-			Console.WriteLine (" ");
+			GnuPlot.Unset ("multiplot");
 			
 		}
 		
