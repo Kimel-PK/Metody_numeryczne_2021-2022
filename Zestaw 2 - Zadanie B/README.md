@@ -1,5 +1,7 @@
 # Zestaw 2 - Zadanie B
 
+## Treść zadania
+
 Korzystając z ulubionego języka proszę zaimplementować następujący pseudokod:
 
 ```text
@@ -21,3 +23,13 @@ Korzystając z implementacji:
   - liczby zmiennoprzecinkowe reprezentowane są w pojedynczej precyzji
   - liczby zmiennoprzecinkowe reprezentowane są w podwójnej precyzji
 - otrzymane wyniki proszę zinterpretować i skomentować :-)
+
+## Komentarz
+
+Po zsumowaniu wszystkich mniejszych liczb powinniśmy za każdym razem otrzymywać 1, jednak przez przymus zaokrąglania bardzo małych liczb do formatu jaki jesteśmy w stanie zapisać na komputerze wynik jest tylko zbliżony do 1.
+
+Dla zmiennych typu float największy błąd jest rzędu 3x10e-5.
+
+Dla zmiennych typu double największy błąd jest rzędu 6x10e-14.
+
+Zmienne typu double przechowywane są na większej ilości bitów i dzieki temu zapewniają większą precyzję.
