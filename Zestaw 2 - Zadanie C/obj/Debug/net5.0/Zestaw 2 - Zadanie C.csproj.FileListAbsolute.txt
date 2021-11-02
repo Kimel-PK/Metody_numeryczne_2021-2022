@@ -1,0 +1,16 @@
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\bin\Debug\net5.0\Zestaw 2 - Zadanie C.exe
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\bin\Debug\net5.0\Zestaw 2 - Zadanie C.deps.json
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\bin\Debug\net5.0\Zestaw 2 - Zadanie C.runtimeconfig.json
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\bin\Debug\net5.0\Zestaw 2 - Zadanie C.runtimeconfig.dev.json
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\bin\Debug\net5.0\Zestaw 2 - Zadanie C.dll
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\bin\Debug\net5.0\ref\Zestaw 2 - Zadanie C.dll
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\bin\Debug\net5.0\Zestaw 2 - Zadanie C.pdb
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\obj\Debug\net5.0\Zestaw 2 - Zadanie C.csproj.AssemblyReference.cache
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\obj\Debug\net5.0\Zestaw 2 - Zadanie C.GeneratedMSBuildEditorConfig.editorconfig
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\obj\Debug\net5.0\Zestaw 2 - Zadanie C.AssemblyInfoInputs.cache
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\obj\Debug\net5.0\Zestaw 2 - Zadanie C.AssemblyInfo.cs
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\obj\Debug\net5.0\Zestaw 2 - Zadanie C.csproj.CoreCompileInputs.cache
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\obj\Debug\net5.0\Zestaw 2 - Zadanie C.dll
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\obj\Debug\net5.0\ref\Zestaw 2 - Zadanie C.dll
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\obj\Debug\net5.0\Zestaw 2 - Zadanie C.pdb
+F:\Visual Code\Studia\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie C\obj\Debug\net5.0\Zestaw 2 - Zadanie C.genruntimeconfig.cache
