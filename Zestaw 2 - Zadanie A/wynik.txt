@@ -1,0 +1,26 @@
+Wynik wypisywany przez program do konsoli
+
+===== float =====
+Minimalna wartość float: -3,4028235E+38
+Maksymalna wartość float: 3,4028235E+38
+Przepełnienie float: ?
+Niedomiar float: -?
+Przepełnienie jest reprezentowane jako stała float.PositiveInfinity
+Niedomiar jest reprezentowany jako stała float.NegativeInfinity
+
+===== double =====
+Minimalna wartość double: -1,7976931348623157E+308
+Maksymalna wartość double: 1,7976931348623157E+308
+Przepełnienie double: ?
+Niedomiar double: -?
+Przepełnienie jest reprezentowane jako stała double.PositiveInfinity
+Niedomiar jest reprezentowany jako stała double.NegativeInfinity
+
+Żeby bezpiecznie obsłużyć sytuacje przekraczające granicę reprezentacji potrzebujemy ulepszonych metod na wykonywanie obliczeń
+
+// w razie odkomentowania jednego z obliczeń wyrzucającego wyjątki:
+
+Unhandled exception. System.OverflowException: Wynik przekroczył maksymalną precyzje systemu
+   at Zadanie_2A.Program.Pomnóż(Double a, Double b) in ...\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie A\Program.cs:line 73
+   at Zadanie_2A.Program.Main(String[] args) in ...\Metody_numeryczne_2021-2022\Zestaw 2 - Zadanie A\Program.cs:line 46
+Działanie procesu terminalu „C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command dotnet run” zostało zakończone z kodem zakończenia: 1.
