@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\kimel\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\kimel\\.nuget\\packages"
-    ]
-  }
-}
