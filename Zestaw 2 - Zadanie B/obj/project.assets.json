@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Visual Code\\C++\\Metody_numeryczne_2021-2022\\Zestaw 2 - Zadanie B\\Zestaw 2 - Zadanie B.csproj",
+      "projectUniqueName": "F:\\Visual Code\\Studia\\Metody_numeryczne_2021-2022\\Zestaw 2 - Zadanie B\\Zestaw 2 - Zadanie B.csproj",
       "projectName": "Zestaw 2 - Zadanie B",
-      "projectPath": "F:\\Visual Code\\C++\\Metody_numeryczne_2021-2022\\Zestaw 2 - Zadanie B\\Zestaw 2 - Zadanie B.csproj",
+      "projectPath": "F:\\Visual Code\\Studia\\Metody_numeryczne_2021-2022\\Zestaw 2 - Zadanie B\\Zestaw 2 - Zadanie B.csproj",
       "packagesPath": "C:\\Users\\kimel\\.nuget\\packages\\",
-      "outputPath": "F:\\Visual Code\\C++\\Metody_numeryczne_2021-2022\\Zestaw 2 - Zadanie B\\obj\\",
+      "outputPath": "F:\\Visual Code\\Studia\\Metody_numeryczne_2021-2022\\Zestaw 2 - Zadanie B\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kimel\\AppData\\Roaming\\NuGet\\NuGet.Config",
