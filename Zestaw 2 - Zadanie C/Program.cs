@@ -21,11 +21,11 @@ namespace Zadanie_2C {
                 wyniki_double[i] = 4 * wyniki_double[i-1] - 1;
             }
             
-            GnuPlot.HoldOn();
-            GnuPlot.Plot(Array.ConvertAll(wyniki_decimal, x => (double)x), "with line");
-            GnuPlot.Plot(Array.ConvertAll(wyniki_float, x => (double)x), "with line");
-            GnuPlot.Plot(wyniki_double, "with line");
-            GnuPlot.HoldOff();
+            GnuPlot.Set ("multiplot layout 1,3");
+            GnuPlot.Plot(Array.ConvertAll(wyniki_decimal, x => (double)x), "title \"decimal\" with line");
+            GnuPlot.Plot(Array.ConvertAll(wyniki_float, x => (double)x), "title \"float\" with line");
+            GnuPlot.Plot(wyniki_double, "title \"double\" with line");
+            GnuPlot.Unset ("multiplot");
             
         }
     }
