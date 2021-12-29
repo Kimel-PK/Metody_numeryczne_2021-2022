@@ -13,8 +13,8 @@ Zadania z przedmiotu Metody numeryczne w roku akademickim 2020-2021
 - [X] [Zadanie A](Zestaw%202%20-%20Zadanie%20A/)
 - [X] [Zadanie B](Zestaw%202%20-%20Zadanie%20B/)
 - [X] [Zadanie C](Zestaw%202%20-%20Zadanie%20C/)
-- [ ] Zadanie D
-- [ ] Zadanie E 
+- [ ] [Zadanie D](Zestaw%202%20-%20Zadanie%20D/)
+- [ ] [Zadanie E](Zestaw%202%20-%20Zadanie%20E/)
 
 ### Zestaw 4
 
