@@ -24,5 +24,5 @@ Zadania z przedmiotu Metody numeryczne w roku akademickim 2020-2021
 
 - [X] [Zadanie 1](Zestaw%20G%20-%20Zadanie%201/)
 - [ ] [Zadanie 2](Zestaw%20G%20-%20Zadanie%202/)
-- [ ] [Zadanie 7](Zestaw%20G%20-%20Zadanie%207/)
+- [X] [Zadanie 7](Zestaw%20G%20-%20Zadanie%207/)
 - [ ] [Zadanie 9](Zestaw%20G%20-%20Zadanie%209/)
