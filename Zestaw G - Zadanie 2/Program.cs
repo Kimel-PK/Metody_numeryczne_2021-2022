@@ -12,42 +12,37 @@ Vector<double> A_5 = Vector<double>.Build.Dense(124, 1);
 Vector<double> b = Vector<double>.Build.Dense(128, 1);
 
 Vector<double> x = Vector<double>.Build.Dense(128);
-Vector<double> x_j = Vector<double>.Build.Dense(128);
 
-int MAX_REPS = 16;
-
-for (int i = 1; i < MAX_REPS + 1; i++) {
+for (int i = 1; i < 100; i++) {
 	
-	x_j[0] = b[0] - x_j[1] - x_j[4];
-	x_j[0] /= A_3[0];
+	x[0] = b[0] - x[1] - x[4];
+	x[0] /= A_3[0];
 	
-	x_j[1] = b[1] - x_j[0] - x_j[2] - x_j[5];
-	x_j[1] /= A_3[1];
+	x[1] = b[1] - x[0] - x[2] - x[5];
+	x[1] /= A_3[1];
 	
-	x_j[2] = b[2] - x_j[1] - x_j[3] - x_j[6];
-	x_j[2] /= A_3[2];
+	x[2] = b[2] - x[1] - x[3] - x[6];
+	x[2] /= A_3[2];
 	
-	x_j[3] = b[3] - x_j[2] - x_j[4] - x_j[7];
-	x_j[3] /= A_3[3];
+	x[3] = b[3] - x[2] - x[4] - x[7];
+	x[3] /= A_3[3];
 	
 	for (int j = 4; j < 124; j++) {
-		x_j[j] = 1 - x_j[j - 4] - x_j[j - 1] - x_j[j + 1] - x_j[j + 4];
-		x_j[j] /= A_3[j];
+		x[j] = b[j] - x[j - 4] - x[j - 1] - x[j + 1] - x[j + 4];
+		x[j] /= A_3[j];
 	}
 	
-	x_j[124] = b[124] - x_j[120] - x_j[123] - x_j[125];
-	x_j[124] /= A_3[124];
+	x[124] = b[124] - x[120] - x[123] - x[125];
+	x[124] /= A_3[124];
 	
-	x_j[125] = b[125] - x_j[121] - x_j[124] - x_j[126];
-	x_j[125] /= A_3[125];
+	x[125] = b[125] - x[121] - x[124] - x[126];
+	x[125] /= A_3[125];
 	
-	x_j[126] = b[126] - x_j[122] - x_j[125] - x_j[127];
-	x_j[126] /= A_3[126];
+	x[126] = b[126] - x[122] - x[125] - x[127];
+	x[126] /= A_3[126];
 	
-	x_j[127] = b[127] - x_j[123] - x_j[126];
-	x_j[127] /= A_3[127];
-	
-	x = x_j.Clone();
+	x[127] = b[127] - x[123] - x[126];
+	x[127] /= A_3[127];
 	
 }
 
@@ -66,7 +61,7 @@ Vector<double> p = r.Clone();
 double alfa = 0;
 double beta = 0;
 
-for (int i = 1; i < MAX_REPS + 1; i++) {
+while (r.Norm(2) > 0.0000000000001) {
 	
 	alfa = (r * r) / (p * OptMul (A_1, A_2, A_3, A_4, A_5, p));
 	Vector<double> r_k = r - alfa * OptMul (A_1, A_2, A_3, A_4, A_5, p);
@@ -77,7 +72,6 @@ for (int i = 1; i < MAX_REPS + 1; i++) {
 	r = r_k;
 	p = p_k;
 	x = x_k;
-	
 }
 
 Console.WriteLine ("Wynik:");

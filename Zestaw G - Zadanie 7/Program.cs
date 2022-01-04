@@ -6,30 +6,24 @@ using MathNet.Numerics;
 Vector<double> x = Vector<double>.Build.DenseOfArray (new double[] {0.062500, 0.187500, 0.312500, 0.437500, 0.562500, 0.687500, 0.812500, 0.937500});
 Vector<double> fx = Vector<double>.Build.DenseOfArray (new double[] {0.687959, 0.073443, -0.517558, -1.077264, -1.600455, -2.080815, -2.507266, -2.860307});
 Vector<double> a = Vector<double>.Build.Dense (x.Count);
-Vector<double> f_k_next = Vector<double>.Build.Dense (x.Count);
-Vector<double> f_k = fx.Clone();
+Vector<double> f_i_next = Vector<double>.Build.Dense (x.Count);
+Vector<double> f_i = fx.Clone();
 
 Vector<double> ls = Vector<double>.Build.Dense (a.Count);
 
 for (int i = 0; i < 8; i++) {
 	ls[i] += do_l (x, i);
-}
-
-for (int i = 0; i < 8; i++) {
 	a[0] += do_l (x, i) * fx[i];
 }
 
 for (int i = 1; i < 8; i++) {
 	
 	for (int j = 0; j < 8; j++) {
-		f_k_next[j] = (f_k[j] - a[i - 1]) / x[j];
+		f_i_next[j] = (f_i[j] - a[i - 1]) / x[j];
+		a[i] += do_l (x, j) * f_i_next[j];
 	}
 	
-	for (int j = 0; j < 8; j++) {
-		a[i] += do_l (x, j) * f_k_next[j];
-	}
-	
-	f_k = f_k_next.Clone();
+	f_i = f_i_next.Clone();
 }
 
 Console.WriteLine ("Wynik:");
@@ -55,12 +49,10 @@ double do_l (Vector<double> x, int j) {
 	double a = 1.0;
 	double b = 1.0;
 	
-	for (int i = 0; i < j; i++) {
-		a *= -x[i];
-		b *= x[j] - x[i];
-	}
-	
-	for (int i = j + 1; i < 8; i++) {
+	for (int i = 0; i < 8; i++) {
+		if (i == j)
+			continue;
+		
 		a *= -x[i];
 		b *= x[j] - x[i];
 	}

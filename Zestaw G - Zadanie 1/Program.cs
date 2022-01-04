@@ -25,8 +25,6 @@ double alpha = 1.0;
 
 Vector<double> u = Vector<double>.Build.Dense(d.Count);
 
-double[] test = new double[] {1,2,3,4,5};
-
 u[0] = alpha;
 u[^1] = alpha; // w C# [^1] pierwszy element od końca tablicy
 
