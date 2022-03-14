@@ -1,15 +1,15 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Wyświetl wynik",
-            "type": "shell",
-            "command": "gnuplot Zadanie_A.gnu -p",
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        }
-    ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Wyświetl wynik",
+			"type": "shell",
+			"command": "gnuplot Zadanie_A.gnu -p",
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
 }

@@ -30,7 +30,7 @@ Console.WriteLine ("Wynik:");
 
 for (int i = 0; i < a.Count; i++) {
 	a[i] = Math.Round(a[i], 4);
-    Console.WriteLine ("a[" + i + "] = " + a[i]);
+	Console.WriteLine ("a[" + i + "] = " + a[i]);
 }
 
 // gnuplot
